@@ -1,0 +1,51 @@
+/* Sidebar Main Menu */
+.sidebar {
+    width: 100%;
+    background: #2C3E50; /* Darker Background */
+    padding-top: 10px;
+  }
+  
+  .sidebar-list {
+    padding: 0;
+  }
+  
+  /* Main Menu Items */
+  .sidebar-item {
+    padding: 12px 20px;
+    color: white;
+    transition: background 0.3s ease;
+  }
+  
+  .sidebar-item:hover {
+    background-color: #1A252F;
+  }
+  
+  .sidebar-item.active {
+    background-color: #34495E;
+  }
+  
+  /* Updated Submenu Styling (Lighter Shade + Nested Look) */
+  .submenu {
+    padding-left: 10px;
+    background: #3B4D61; /* Lighter Version of Sidebar Background */
+  }
+  
+  .submenu-item {
+    padding: 10px 40px; /* Added Left Padding for Nested Look */
+    color: #ffffff;
+    transition: background 0.3s ease;
+  }
+  
+  .submenu-item:hover {
+    background-color: #4A627A; /* Slightly Darker Hover */
+  }
+  
+  .submenu-item.active {
+    background-color: #5C768D; /* Active Item Color */
+  }
+  
+  /* Smooth Expand Animation */
+  .MuiCollapse-wrapper {
+    transition: height 0.3s ease-in-out;
+  }
+  

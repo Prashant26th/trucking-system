@@ -1,0 +1,86 @@
+.table-row {
+  height: 48px; /* Adjust height to accommodate two lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Prevent text from wrapping */
+} 
+
+.table-header-row {
+  height: 60px; /* Adjust height to accommodate two lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.table-cell {
+  max-height: 48px; /* Ensure cell height matches row height */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Prevent text from wrapping */
+  display: flex;
+  text-align: center;
+}
+
+.form-container {
+  max-width: 100%;
+}
+
+.form-row {
+  display: flex !important;
+  align-items: center !important;
+  width: 49% !important;
+  justify-content: space-between !important;
+  padding: 0 20px !important;
+}
+
+.form-label {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.form-field {
+  display: flex;
+  align-items: center;
+}
+
+.MuiTextField-root {
+  margin-bottom: 8px;
+}
+
+.MuiFormControl-root {
+  height: 40px;
+}
+
+/* Hide scrollbar by default */
+.dialog-content {
+  scrollbar-width: thin; /* For Firefox */
+  -ms-overflow-style: thin; /* For Internet Explorer and Edge */
+  position: relative; /* Ensure scrollbar floats over content */
+  overflow-y: overlay; /* Ensure scrollbar floats over content for modern browsers */
+}
+
+.dialog-content::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+/* Show scrollbar on hover */
+.dialog-content:hover {
+  scrollbar-width: thin; /* For Firefox */
+  overflow-y: overlay; /* Ensure scrollbar floats over content */
+}
+
+.dialog-content:hover::-webkit-scrollbar {
+  display: block; /* For Chrome, Safari, and Opera */
+  width: 8px; /* Adjust scrollbar width */
+  position: absolute; /* Ensure scrollbar floats over content */
+}
+
+.dialog-content:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2); /* Scrollbar thumb color */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.dialog-content:hover::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1); /* Scrollbar track color */
+}

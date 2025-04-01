@@ -1,0 +1,129 @@
+/* AppBar Styling */
+.app-bar {
+    background-color: #2C3E50;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Toolbar */
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    align-items: center;
+  }
+  
+  /* Left Section: Breadcrumb + Logo + Company Name */
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+
+  .right-section {
+    margin-right: 30px;
+  }
+  
+  .menu-button {
+    margin-right: 10px;
+  }
+  
+  .company-logo {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  
+  .company-name {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 18px;
+  }
+  
+  /* User Icon (Right Side) */
+  .user-icon {
+    margin-left: auto;
+  }
+  
+  .user-avatar {
+    background-color: #f39c12;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Main Layout */
+  .main-layout {
+    display: flex;
+    flex: 1;
+    margin-top: 50px;
+  }
+  
+  /* Sidebar Wrapper */
+  .sidebar-wrapper {
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+    position: fixed;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 55px);
+
+    
+    background: #2C3E50;
+    display: none;
+    overflow: hidden;
+  }
+  
+  .sidebar-wrapper.open {
+    transform: translateX(0);
+    display: block;
+  }
+  
+  /* Content */
+  .content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5;
+    transition: margin-left 0.3s ease-in-out;
+  }
+  
+  .content.full-width {
+    margin-left: 0;
+    width: calc(100% - 40px);
+  }
+  
+  .content.with-sidebar {
+    margin-left: 250px;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .toolbar {
+      padding: 0 10px;
+    }
+  
+    .company-logo {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .company-name {
+      font-size: 16px;
+    }
+  
+    .sidebar-wrapper {
+      display: none;
+    }
+  
+    .sidebar-wrapper.open {
+      display: block;
+      width: 250px;
+    }
+  }
+
+  .home-container {
+    height: calc(100vh - 62px);
+    background-color: #f5f5f5;
+  }
